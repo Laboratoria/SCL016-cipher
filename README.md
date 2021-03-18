@@ -42,26 +42,23 @@ aplicación en el sistema ROT13.
 
 ## 2. Resumen del proyecto
 
-**¿Qué tengo que hacer exactamente?** En este proyecto crearás una aplicación
-_web_ que servirá para que tus usuarias puedan cifrar y descifrar un texto
-indicando un desplazamiento específico de caracteres (_offset_). Por ejemplo,
-cifrar **MICASA** con un desplazamiento de 3 caracteres de manera que el mensaje
-cifrado sería **PLFDVD**
+**¿Qué tengo que hacer exactamente?** 
+Es un proyecto que consta en una aplicación _web_ pensada principalmente para telefonos celulares, que sirve para que los usuarios, puedan cifrar y descifrar una secuencia de caracteres, en este caso para cifrar palabras y descifrar claves, para ello los usuarios tienen que indicar un desplazamiento específico de caracteres con un n+umero (_offset_). 
+Por ejemplo, cifrar **MICASA** con un desplazamiento de 3 caracteres de manera que el mensaje cifrado sería **PLFDVD**.
 
-La temática es libre. Piensa en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y piensa en cómo debe ser esa experiencia de uso
-(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
-ejemplo:
+Estamos en un mundo de internet, en que necesitamos claves para entrar a distintas webs y muchas veces cambiarlas, por lo que olvidamos qué clave usamos para que webs por las innumerables webs que hay.
 
-* Crear claves seguras.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
+Por ésto último, esta aplicación está pensada para aquellos usuarios (principalmente personas de tercera edad o personas que olvidan facilmente) que quieran guardar sus claves en forma segura en su celular y/o webs, dando la posibilidad de cifrar palabras para generar una clave segura y descifrar claves por si el usuario quiere recordar la palabra cifrada anteriormente, por ejemplo. 
 
-El equipo de _coaches_ te dará un tiempo referencial para trabajar en este
-proyecto. También indicaciones sobre si trabajar individualmente o en dupla.
-Recuerda que cada quien aprende a un tirmo diferente, tiene más o menos tiempo
-adicional al _bootcamp_ disponible, experiencia previa distina, etc.
+Para comenzar a utilizarla debe entrar al link http://www.... donde también puede descargarla como APP para su celular. El usuario debe registrarse con sus datos y generar una clave fácil de recordar para él, para que pueda acceder a ésta web. luego al acceder a ésta aplicación web, en la barra de desplazamientos debe colocar el número que quiere que se desplaze el valor de la letra a carácter hacia la derecha en caso de cifrar o a a izquierda en caso de descifrar.
+
+Luego en la segunda barra coloque la palabra a cifrar o la clave a descifrar, haga click en botón correspondiente, esto lo llevará a una segunda pantalla donde aparecerá el resultado de su operación.
+
+En el caso que le guste su clave, puede guardarla, haciendo click en botón "guardar", que lo llevará a una tercera pantalla donde pegará ésta clave en una barra de la columna izquierda y en la barra de al lado derecho colocará la dirección del sitio web que está usando dicha clave, por último haga click "guardar", para que quede estatica ahí.
+
+En el caso que no le guste su clave puede hacer click en botón "volver", que lo llevará a la primera pantalla, donde podrá volver a realizar la operación inicial de colocar numero en desplazamientos y palabras en segunda barra y cifrar hasta que encuetre su clave a gusto, para posteriormente guardarla.
+
+Cómo esta es una APP de prueba, en la pantalla de inicio tiene un tercer botón llamado "IR", cuya función es llevarlo a la segunda pantalla, luego de "cifrar" o "descifrar" para ver el resultado, por lo que cada vez que haga click en botones cifrar o descifrar posteriormente tiene que hacer click en botón "IR", para poder ir a segunda pantalla.
 
 ## 3. Criterios de aceptación mínimos del proyecto
 Cuando hablemos de "criterios de aceptación", nos referimos a todo aquello que
@@ -76,363 +73,93 @@ Considera solamente letras mayúsculas, sin ñ ni números u otros caracteres:
 
 Para cifrar debe permitir a tu usuaria:
 * Escribir el mensaje (texto) que quiere cifrar.
-* Elegir un desplazamiento (_offset_) indicando cuántas posiciones quiere que
-  el cifrado desplace **cada letra** del mensaje.
+* Elegir un desplazamiento (_offset_) indicando cuántas posiciones quiere que el cifrado desplace **cada letra** del mensaje.
 * Ver el resultado del mensaje cifrado.
 
-Para descifrar debe permitir a tu usuaria:
+Para descifrar debe permitir a tu usuario:
 * Escribir el mensaje (texto) que quiere descifrar.
 * Indicar el desplazamiento (_offset_) que se utilizó para cifrar el mensaje.
 * Ver el resultado del mensaje descifrado.
 
 ### 3.3 Repositorio del código (GitHub) y publicación de la web (GitHub Pages)
-Cuando termines, y antes de ir a la sesión de _Project Feedback_, tu código deberá
-estar subido a GitHub (_commit/push_) y la interfaz será desplegada (publicada)
-usando _GitHub pages_. Si no sabes lo que es GitHub, no te preocupes, lo
-aprenderás durante este proyecto.
+Cuando termines, y antes de ir a la sesión de _Project Feedback_, tu código deberá estar subido a GitHub (_commit/push_) y la interfaz será desplegada (publicada) usando _GitHub pages_. Si no sabes lo que es GitHub, no te preocupes, lo aprenderás durante este proyecto.
 
 ### 3.4 Sobre la definición de tu producto
-En **tu README.md**, cuéntanos cómo pensaste en las usuarias y cuál fue tu proceso
-para definir el producto final.
+Primero pensé pará qué puede servir el Cifrado Cesar en la actualidad, qué necesidad hay en el mundo actual que el Cifrado Cesar puede ser útil en satisfacer alguna necesidad a usuarios y me acordé de personas cercanas a mi de tercera edad que no logran acordase de sus claves y de mi misma de cuando se me olvidan claves por la cantidad de veces que he tenido que cambiar claves en una o más webs. En estos casos se me ocurrió la utilidad que tendría una aplicación en el celular y/o webs (en caso de no poder acceder a un celular encriptado con clave).
 
-* Quiénes son las principales usuarias del producto.
-* Cuáles son los objetivos que estas usuarias pueden conseguir al usar tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus necesidades.
+* Los principales usuarios son personas de tercera edad o con poca memoria para retener claves.
+* Los objetivos que pueden conseguir los usuarios:
+1. Guardar las claves en forma segura en una aplicación web, indicando en que página uso dicha clave (éste objetivo no es parte del proyecto). 
+2. Crear claves seguras a partir de palabras simples.
+3. Recordar claves (palabras cifradas anteriormente), por diversos motivos del usuario.
 
-### 3.5 Consideraciones técnicas
-Toda esta sección puede resultarte muy abrumadora. Tómalo con calma, no es
-necesario que lo comprendas todo antes de comenzar, irá teniendo sentido conforme
-vas avanzando. Recuerda que el aprendizaje no es un proceso lineal.
+* Proceso para definir producto final:
+1. Diseño en papel: lo primero fue dibujar el diseño en una hoja de papel, visualizando cantidad de pantallas, el logo, Titulos, mensajes, botones e interacciones con las pantallas.
+2. Diseño en Figma: con esta aplicación lo diseñé colocandole colores, tipo de letras a logo, al cuerpo y pie de pagina, colocando las interacciones de botones, etc., siempre mejorando la calidad del diseño que realicé en papel.
+3. Experiencias de Usuarios: una vez listo el diseño en figma se lo mostré a amigas y compañeras de Boodcamp para obtener feedback, lo único que me pidieron que cambiara era el color que lo oscureciera y otras que lo aclarara, realicé estos cambios pero no sé porque casi pierdo información así que lo dejé como quedó y el un futuro pretendo mejorarlo.
 
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o _frameworks_, sólo JavaScript
-puro también conocido como Vanilla JavaScript.
+4. Visual Studio Code: 
+4.1. HTML Semántico: 
+Inicialmente hice dos paginas de HTML semántico para diferenciar las distintas pantallas o cajas, posteriormente, para crear el tercer botón de la primera pantalla integré ambos HTML en uno con la etiqueta <section> para poder ocultar una de las pantallas, mientras se utiliza la otra (ya que no estoy usando la condición if else). Botón que quiero integrar con los otros, en un futuro.
+Primero diseñé la primera pantalla de acuerdo a figma, de arriba hacia abajo, comenzando por body, colocando títulos <h1> y <h3> que vendría siendo el logo de la aplicación. Luego los formularios con la etiqueta <form>, que de acuerdo a su funcionalidad le agregué titulos <label>, botones <button>, para que las pantallas interactúen entre sí. Finalmente agregue el pie de pagina con etiqueta <footer> donde está la información relevante para el usuario (link que por ahora no funciona), terminando con los derechos de autor. Para lograr que esta sección me quedara alineada y con saltos de líneas, coloque todas las etiquetas que estudié que me puedieran servir en esta APP, como me funciona y no interfieren entre ellas, las dejé, más adelante veo si es necesrio sacar las que no sirven.
+Las secciones de ambas pantallas estan divididas por las etiquetas <div> y <p> de acuerdo a su funcionalidad.
+Posteriormente copie y pegué la primera pantalla en un index2 y eliminé formulario donde se coloca el offset, modifiqué título del tercer formulario, en los botones modifique sus identidades y datos. Agregue una pregunta "¿Te gusta tu clave?", para que el usuario responda con hacer click al boton "guardar" o "volver". El botón guardar es un botón que no funciona, porque éste te lleva a una tercera pantalla donde se guarda la clave con su respectiva web y no es objetivo de este trabajo.
 
-No debes utilizar la _pseudo-variable_ `this`.
+4.2. CSS: 
+En un comienzo, como hice dos HTML, hice también dos CSS que están integradas, quiero que se vea más responsiva y en un futuro pretendo arreglar.
+Fui diseñando de arriba hacia abajo línea por línea, en body inicialmente diseñé una caja completa con margenes,bordes y padding pero visualmente los margenes y bordes no eran de utilidad, asi que dejé sólo el padding que es el color de fondo de la APP, colocando sus elementos como altura, ancho, tipo de letra etc., propio de todo el cuerpo de la APP.
+Luego diseñé parte por parte titulos, formularios, botones y pie de página, con sus respectivos elementos y medidas.
+Posteriormente copie y pegué éste CSS a un CSS2 donde modifiqué de acuerdo al diseño de HTML de la segunda pantalla.
 
-#### 3.5.1 Sobre el _boilerplate_
-Llamamos **_boilerplate_** a la estructura de archivos y a toda la configuración
-de dependencias y _tests_ de ejemplo que ya existen en este repositorio y que te servirán como una "plantilla", como un punto de partida para trabajar.
+4.3. JAVASCRIPT: 
+En la medida que iba estudiando javascript iba escribiendo las funcionalidades en la pagina de index.js respetando su estructura, como no me funcionaba y no entendía lo que hacía volví hacerlo, pero antes diseñé el mapa de flujo en papel y luego fui reeescribiendo en index.js, paso por paso las funcionalidades declarando las variables para que guarde los datos a usar. Aqui es donde aprendi a testear por lo que tuve que testear paso a paso, ocultando los pasos posteriores y asi fui modificando datos, variable y funciones hasta que me funcionara, pasaba al siguiente paso.
 
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── cipher.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── cipher.spec.js
-```
-El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
-`JavaScript` con respecto a una guía de estilos. Ambas tareas se ejecutan
-automáticamente antes de ejecutar las pruebas (_tests_) cuando usamos el comando
-`npm run test`. En el caso de `JavaScript` estamos usando un archivo de
-configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
-información sobre el _parser_ que usar (qué version de JavaScript/ECMAScript), el
-entorno (_browser_ en este caso) y las [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
-En cuanto a reglas/guías de estilo en sí, usaremos las recomendaciones _por defecto_
-de tanto `eslint` como `htmlhint`.
-
-#### 3.5.2 Sobre los tests unitarios (pruebas)
-El _boilerplate_ incluye _tests_ (pruebas) de ejemplo como punto de partida.
-
-Los _tests_ unitarios (pruebas) deben cubrir un mínimo del 70% de _statements_,
-_functions_ y _lines_, y un mínimo del 50% de _branches_.
-
-El _boilerplate_ ya contiene el _setup_ y configuración necesaria para ejecutar
-los _tests_ (pruebas) así como _code coverage_ para ver el nivel de cobertura de
-los _tests_ usando el comando `npm test`.
-
-
-#### 3.5.3 Sobre tus Scripts / Archivos
-* `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
-  así como una introducción a la aplicación, su funcionalidad y decisiones de
-  diseño que tomaron.
-* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
-  debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
-* `src/cipher.js`: acá debes implementar el objeto `cipher`, el cual ya está
-  _exportado_ en el _boilerplate_. Este objeto (`cipher`) debe contener dos
-  métodos:
-  - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la derecha en el alfabeto y `string` el mensaje (texto)
-    que queremos cifrar.
-  - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la izquierda en el alfabeto y `string` el mensaje
-    (texto) que queremos descifrar.
-* `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
-  o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
-* `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
-  tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
-
-## 4. Criterios de aceptación adicionales
-Si te alcanza el tiempo y las ganas para explorar un poco más, intenta:
-
-* Cifrar minúsculas, ñ, números, etc. El _boilerplate_ incluye algunos tests
-(comentados en principio) que puedes usar como punto de partida para implementar el soporte para estos casos.
-
-* Permitir un _offset_ negativo.
+4.4. JAVASCRIPT CIPHER:
+Mientras estudiaba y diseñaba javascript me encontré con el video de Michelle donde explica la formula de ASCII lo escribi inmediatamente en cipher.js y lo fui modificando en la medida que iba avanzando con index.js, la formula final consta de un bucle for. 
 
 ## 5. Objetivos de aprendizaje
 
 ### HTML y CSS
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
+* [x] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+* [x] Uso de selectores de CSS.
+* [x] Construir tu aplicación respetando el diseño realizado (maquetación).
 
 ### DOM
 
-* [ ] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
-* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
+* [x] Uso de selectores del DOM.
+* [x] Manejo de eventos del DOM.
+* [x] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
 ### JavaScript
 
-* [ ] Manipulación de strings.
+* [x] Manipulación de strings.
 * [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de bucles (for | for..in | for..of | while)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Declaración correcta de variables (const & let)
+* [x] Uso de bucles (for | for..in | for..of | while)
+* [x] Uso de funciones (parámetros | argumentos | valor de retorno)
+* [x] Declaración correcta de variables (const & let)
 
 ### Testing
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+* [x] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
 
 ### Estructura del código y guía de estilo
 
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
+* [x] Organizar y dividir el código en módulos (Modularización)
+* [x] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+* [x] Uso de linter (ESLINT)
 
 ### Git y GitHub
 
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+* [x] Uso de comandos de git (add | commit | pull | status | push)
+* [x] Manejo de repositorios de GitHub (clone | fork | gh-pages)
 
 ### UX
 
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
+* [x] Diseñar la aplicación pensando y entendiendo al usuario.
+* [x] Crear prototipos para obtener feedback e iterar.
+* [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
 
 ***
 
-## 6. Recomendaciones generales
-
-Pierde el miedo a preguntar a tus _coaches_ y a tus compañeras. Estás aquí
-porque quieres aprender. Si ya supieras, estarías trabajando como _developer_
-y no el _bootcamp_ de Laboratoria.
-
-Hazte amiga de Trello. No solamente te ayudará a organizar tu trabajo, es
-también una excelente manera de ir razonando sobre los pasos que seguirás,
-en qué orden hacerlos, identificar qué necesitas aprender, etc.
-
-Al prinncipio, Git y GitHub te resultarán misteriosos, no les temas y úsalos a
-tu favor. Procura hacer _commits_ con frecuencia, eso te ayudará a tener un respaldo
-en todo momento y podrás acceder a él siempre que lo necesites. ¡No lo dejes al final!
-
-Anímate a correr los _tests_ cuanto antes para que te ayude a la construcción de
-tus funciones.
-
-### 6.1 Primeros pasos, tu prototipo en papel
-Comienza por la ideación y el prototipado de tu proyecto. Dibuja en papel y lápiz
-exactamente cada elemento que tendrá tu interfaz y prueba con algunas personas
-para ver si se comprende, si es suficientemente intuitivo, etc.
-
-Este paso es fundamental para que tú misma comprendas si tus ideas "funcionan"
-fuera de tu cabeza. Te ayudará a entender mejor todo lo que tienes que hacer.
-**No inviertas demasiado tiempo en esto. Con uns pocas horas debería ser más
-que suficiente.**
-
-A partir de acá puedes seguir por diferntes caminos. Es como armar un rompecabezas
-o _puzzle_, puedes comenzar por una esquina, luego otra, un pedazo de un borde,
-de otro, etc. Poco a poco te será más fácil ver "el todo" y entender cómo encajan
-todas las partes.
-
-Te sugerimos seguir por lo que menos sabes. Evita caer en el juego de
-"la ilusión del avance". Quizás te sienteas "cómoda" trabajando en HTML y CSS
-porque lo que haces se "ve" en el navegador y puede resultarte más fácil de comprender.
-Si te quedas trabajando en eso tendrás la sensación de estar "avanzando", pregúntante
-si estás "aprendiendo". No estás acá para "entregar proyectos", estás para aprender
-lo que no sabes.
-
-### 6.2 Achicando el gran problema en problemas más pequeños
-Un "superpoder" que esperamos puedas desarrollar durante el _bootcamp_ es el de
-definir "mini-proyectos" que te acerquen paso a paso a la solución del
-"gran proyecto". Es el equvalente a comenzar armando esquinas o bordes del
-rompecabezas/puzzle sin saber necesariamente cómo encajarán al final. Déjate
-llevar y explora. Estas son algunas sugerencias:
-
-#### "Mover" un valor de una caja de texto a otra
-Crea una interfaz simple con 2 cajas de texto y un botón. Si escribo algo en la
-caja de texto 1 y le doy click al botón, quiero que lo que escribí se "mueva"
-desde la caja 1 hacia la caja 2.
-
-Para lograr esto tendrás que aprender a: detectar un evento en el navegador (_click_), identificar un elemento de tu interfaz para obtener su contenido/valor (la caja de texto 1), "escribir" un valor en otro elemento de la interfaz (caja de texto 2).
-
-#### "Convertir" una letra en su código ASCII
-Pensando en la misma interfaz anterior (2 cajas de texto y 1 botón). Quiero
-escribir A o B (una sola) en la caja de texto 1 y que cuando le dé _click_ al botón,
-aparezca el código ASCII de la letra en la caja de texto 2.
-
-Ahora no solamente estás "leyendo" y "escribiendo" valores en el navegador, también
-tendrás que "manipularlos" antes de "escribirlos".
-
-#### "Cifrar" A o B con un desplazamiento (_offset_) de 3
-Cuando escriba A o B en la caja de texto 1 y le dé click al botón, quiero que
-apaezca la letra cifrada en la caja de texto 2. Por ejemplo, si escribo B
-debe aparecer E.
-
-#### "Cifrar" una letra con un desplazamiento de 30 caracteres
-En los casos anteriores probamos con letras y con un desplazamiento que no
-implicaban llegar "más allá" de final del alfabeto. Ahora prueba con un caso que
-sí lo requiera. Por ejmplo 30 caracteres de desplazamiento. Para esto te puede
-ayudar el video de la sección "Recursos y temas relacionados". **La fórmula no es
-lo importante en este proyecto, lo importante es lo que haces con la fórmula.**
-
-#### "Cifrar" tres letras con un desplazamiento cuqlquiera
-Hasta ahora hemos explorado trabajar con una sola letra pero ¿cómo haríamos si
-son más? Para hacerlo tendrás que aprender cómo ir cifrando letra por letra y
-ya estás mucho más cerca de resolver el proyecto "grande"
-
-Fíjate que la complejidad es creciente, la clave está en definir el primer paso
-lo más simple y pequeño que puedas. Luego tú misma puedes ir agregando complejidad
-a medida que avanzas.
-
-### 5.3 Tu caja de arena para "jugar"
-Así como existen las cajas de arena para que las niñas jueguen en un espacio
-seguro y controlado", tú también puedes procurarte condiciones "controladas" en
-las que puedas identificar lo que te falla. Si comienzas explorando y probando
-en archivos con muchas líenas de código y muchas cosas sucediento al mismo tiempo,
-será difícil que sepas qué falla y/o por qué no te funciona algo que acabas de
-leer y estás segura en entender. Esto puede ser muy frustrante y hacerte perder
-mucho tiempo.
-
-Para probar los mini-proyectos que te proponnemos, puedes hacerlo en un
-proyecto/archivos en blanco en los que tú tienes el control y sabes exactamente
-qué es y qué hace cada cosa. También puedes utilizar CodePen o Replit (por ejemplo).
-
-### 6.4 Herramientas y configuración de tu PC
-
-1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
-   condiciones, algo como [Atom](https://atom.io/) o
-   [Code](https://code.visualstudio.com/).
-2. Para ejecutar los comandos a continuación necesitarás una :shell:
-   [UNIX Shell](../../topics/shell),
-   que es un programita que interpreta líneas de comando (command-line
-   interpreter) así como tener [git](../../topics/scm/01-git)
-   instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
-   ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
-   también). Si usas Windows puedes usar la versión completa de [Cmder](https://cmder.net/)
-   que incluye [Git bash](https://git-scm.com/download/win) y si tienes Windows
-   10 o superior puedes usar [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-3. Tú o una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repositorio de tu cohort,
-   tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) un `remote`
-   hacia el mismo.
-4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu *fork* a tu computadora (copia local).
-5. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-7. Para ver la interfaz de tu programa en el navegador, usa el comando
-   `npm start` para arrancar el servidor web y dirígete a
-   `http://localhost:5000` en tu navegador.
-
-## 7. Recursos y temas relacionados
-
-### 7.1 fórmula matemática del Cifrado César y un par de cosas más
-A continuación un video de Michelle ¡Escúchala con detenimiento y sigue sus consejos! :)
-
-[![tips caesar cipher](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
-
-[Link](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
-
-### 7.2 Terminal y shell de UNIX:
-
-[![Playlist de Terminal y shell de UNIX](https://img.youtube.com/vi/GB35Eyb-J4c/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
-
-[Link](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
-
-### 7.3 Control de versiones y trabajo colaborativo con Git y GitHub:
-
-[![Playlist de control de versiones y trabajo colaborativo](https://img.youtube.com/vi/F1EoBbvhaqU/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8k9o3PbT3_QdyoBW_RX8rnV)
-
-[Link](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
-
-### 7.4 Temas relacionados
-#### Diseño de experiencia de usuario (User Experience Design):
-
-* Ideación
-* Prototipado (sketching)
-* Testeo e Iteración
-
-#### Desarrollo Front-end:
-
-* Valores
-* Tipos
-* Variables
-* Control de flujo
-* Tests unitarios
-* [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
-* [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
-* [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
-* [Documentación de NPM](https://docs.npmjs.com/)
-
-#### Organización del Trabajo:
-
-* [Metodologías Ágiles](https://www.youtube.com/watch?v=v3fLx7VHxGM)
-* [Scrum en menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
-* [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No
-  esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
-  poco a lo largo del -_bootcamp_.
-
-## 8. Checklist
-<details>
-  <summary>!Click para expandir¡</summary>
-
-Esta sección está para ayudarte a llevar un control de lo que vas completando.
-
-### Criterios de aceptación mínimos
-
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica quiénes son las usuarias y su relación con
-  el producto.
-* [ ] `README.md` explica cómo el producto soluciona los problemas/necesidades
-de las usuarias.
-* [ ] Usa VanillaJS.
-* [ ] No utiliza `this`.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
-  mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
-  cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
-
-### Criterios de aceptación adicionales (opcionales)
-
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
-
-</details>
