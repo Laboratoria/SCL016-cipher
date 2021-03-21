@@ -13,13 +13,14 @@ import cipher from "./cipher.js";
 //saveWrewnch: para guardar claves.
 // eWords: para cifrar palabras.
 // dWrench: para descifrar claves.
+
 // value:cajita para guardar datos.
 //Evento DOM: document.getElementById() selecciona un elemento de HTML a/t "id" (usado en 1).
 //Función: parseInt analiza diferentes cadenas.
-//Metodo o Evento?: addEventListener es para adjuntar un evento al click*/ (usado en 1)
+//Metodo: addEventListener es para adjuntar un evento al click*/ (usado en 1)
 //Metodo: toUpperCase convierte cadena en letras mayusculas. 
 //Metodo:fromCharcode muestra valor ASCII de un caracter.*/
-//Metodo: fromCharcodeAt convierte número en caracter.*/
+//Metodo: CharcodeAt convierte número en caracter.*/
 //Propiedad DOM: textContent: muestra el contenido de un texto de un elemento, sin la etiqueta HTML. (usado en 2)
 //Propiedad DOM: innerHTML: cambia el contenido HTML de un elemento <p> con id="demo": document.getElementById("demo").innerHTML= "mje a ver";.*/
 //Punto concatena 2 parametros. lo 1ro es elemento, lo segundo es lo que quiero que haga el 1ro.
@@ -28,9 +29,9 @@ import cipher from "./cipher.js";
 
 const eWord = document.getElementById("encryptWord");
 eWord.addEventListener("click", function () {
-  let numb = document.getElementById("despla").value; //aqui llamo a id=form*/
-  let secuenseWord = document.getElementById("placete").value; //aqui llamo a id=form*/
-  let result= document.getElementById("sight"); //aqui llamo a form result*/
+  let numb = document.getElementById("despla").value; //aqui llamo a id=1°form*/
+  let secuenseWord = document.getElementById("placete").value; //aqui llamo a id=2°form*/
+  let result= document.getElementById("sight"); //aqui llamo a 3°form result*/
    
   let textCipher= cipher.encode(numb, secuenseWord);
   result.value= textCipher; //aqui se llama a Cipher para que muestre valor en form 3*/
@@ -39,19 +40,19 @@ eWord.addEventListener("click", function () {
 //1.1 CREANDO (DEFINIENDO) Y DECLARANDO FUNCIÖN BOTON "CIFRAR" (TRANSFORMAR PALABRA EN CLAVE). => revisar errores*/
 let numb = document.getElementById("despla").value; //esta var esta declarada aneriormente en una f()*/
 let secuenseWord = document.getElementById("placete").value; //esta var esta declarada aneriormente en una f()*/
-let ind = secuenseWord.charCodeAt(); // esto es por lugar de letra en string*/
+let ind = secuenseWord.charCodeAt(); // esto es por lugar de letra en string, para desplazamientos*/
 
 
 let encryption = ((ind -65 + numb)%26 + 65); // Para tomar formula ASCII cipher.js*/
 
-let result = String.fromCharCode(encryption); // muestra valor ASCII de caracter*/
+let result = String.fromCharCode(encryption); // muestra valor ASCII de cada caracter*/
 
 //2 DECLARACION DE VARIABLES PARA GUARDAR DATOS AL "DESCIFRAR"*/
 const dWrench = document.getElementById("decryptWrench");
 dWrench.addEventListener("click", function () {
     let numb = document.getElementById("despla").value;
     let secuenseWrench = document.getElementById("placete").value;
-    let result= document.getElementById("sight"); //aqui llamo a form result*/
+    let result= document.getElementById("sight"); //aqui llamo a 3°form result*/
     
     let textCipher= cipher.decode(numb, secuenseWrench);
     result.value= textCipher;

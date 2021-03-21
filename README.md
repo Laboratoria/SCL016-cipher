@@ -50,9 +50,9 @@ Estamos en un mundo de internet, en que necesitamos claves para entrar a distint
 
 Por ésto último, esta aplicación está pensada para aquellos usuarios (principalmente personas de tercera edad o personas que olvidan facilmente) que quieran guardar sus claves en forma segura en su celular y/o webs, dando la posibilidad de cifrar palabras para generar una clave segura y descifrar claves por si el usuario quiere recordar la palabra cifrada anteriormente, por ejemplo. 
 
-Para comenzar a utilizarla debe entrar al link http://www.... donde también puede descargarla como APP para su celular. El usuario debe registrarse con sus datos y generar una clave fácil de recordar para él, para que pueda acceder a ésta web. luego al acceder a ésta aplicación web, en la barra de desplazamientos debe colocar el número que quiere que se desplaze el valor de la letra a carácter hacia la derecha en caso de cifrar o a a izquierda en caso de descifrar.
+Para comenzar a utilizarla debe entrar al link http://www.... donde también puede descargarla como APP para su celular. El usuario debe registrarse con sus datos y generar una clave fácil de recordar para él, para que pueda acceder a ésta web. luego al acceder a ésta aplicación web, en la barra de desplazamientos debe colocar el número que quiere que se desplaze el valor de la letra a carácter hacia la derecha en caso de cifrar o a la izquierda en caso de descifrar.
 
-Luego en la segunda barra coloque la palabra a cifrar o la clave a descifrar, haga click en botón correspondiente, esto lo llevará a una segunda pantalla donde aparecerá el resultado de su operación.
+Luego en la segunda barra el usuario debe colocar la palabra a cifrar o la clave a descifrar, haga click en botón correspondiente y posteriormente hacer click en boton "IR" esto lo llevará a una segunda pantalla donde aparecerá el resultado de su operación.
 
 En el caso que le guste su clave, puede guardarla, haciendo click en botón "guardar", que lo llevará a una tercera pantalla donde pegará ésta clave en una barra de la columna izquierda y en la barra de al lado derecho colocará la dirección del sitio web que está usando dicha clave, por último haga click "guardar", para que quede estatica ahí.
 
@@ -95,7 +95,7 @@ Primero pensé pará qué puede servir el Cifrado Cesar en la actualidad, qué n
 
 * Proceso para definir producto final:
 1. Diseño en papel: lo primero fue dibujar el diseño en una hoja de papel, visualizando cantidad de pantallas, el logo, Titulos, mensajes, botones e interacciones con las pantallas.
-2. Diseño en Figma: con esta aplicación lo diseñé colocandole colores, tipo de letras a logo, al cuerpo y pie de pagina, colocando las interacciones de botones, etc., siempre mejorando la calidad del diseño que realicé en papel.
+2. Diseño en Figma: con esta aplicación lo diseñé colocandole colores, tipo de letras a logo, al cuerpo y pie de pagina, colocando las interacciones de botones, etc., siempre mejorando la calidad del diseño que realicé en papel, lo puedes ver en siguiente enlace: https://www.figma.com/file/0L0CKjfK1bMYkHAEkLQo2Z/CIFRADO?node-id=0%3A1
 3. Experiencias de Usuarios: una vez listo el diseño en figma se lo mostré a amigas y compañeras de Boodcamp para obtener feedback, lo único que me pidieron que cambiara era el color que lo oscureciera y otras que lo aclarara, realicé estos cambios pero no sé porque casi pierdo información así que lo dejé como quedó y el un futuro pretendo mejorarlo.
 
 4. Visual Studio Code: 
@@ -110,9 +110,10 @@ En un comienzo, como hice dos HTML, hice también dos CSS que están integradas,
 Fui diseñando de arriba hacia abajo línea por línea, en body inicialmente diseñé una caja completa con margenes,bordes y padding pero visualmente los margenes y bordes no eran de utilidad, asi que dejé sólo el padding que es el color de fondo de la APP, colocando sus elementos como altura, ancho, tipo de letra etc., propio de todo el cuerpo de la APP.
 Luego diseñé parte por parte titulos, formularios, botones y pie de página, con sus respectivos elementos y medidas.
 Posteriormente copie y pegué éste CSS a un CSS2 donde modifiqué de acuerdo al diseño de HTML de la segunda pantalla.
+Por último volví agregar borde y margen a caja para que se vea cebtrada en la pantalla.
 
 4.3. JAVASCRIPT: 
-En la medida que iba estudiando javascript iba escribiendo las funcionalidades en la pagina de index.js respetando su estructura, como no me funcionaba y no entendía lo que hacía volví hacerlo, pero antes diseñé el mapa de flujo en papel y luego fui reeescribiendo en index.js, paso por paso las funcionalidades declarando las variables para que guarde los datos a usar. Aqui es donde aprendi a testear por lo que tuve que testear paso a paso, ocultando los pasos posteriores y asi fui modificando datos, variable y funciones hasta que me funcionara, pasaba al siguiente paso.
+En la medida que iba estudiando javascript iba escribiendo las funcionalidades en la pagina de index.js respetando su estructura, como no me funcionaba y no entendía lo que hacía volví hacerlo, pero antes diseñé el mapa de flujo en papel y luego fui reeescribiendo en index.js, paso por paso las funcionalidades declarando las variables para que guarde los datos a usar. Aqui es donde aprendi a testear por lo que tuve que testear paso a paso, ocultando los pasos posteriores y asi fui modificando datos, variable y funciones hasta que me funcionara, pasaba al siguiente paso. Use principalmente document.getElementById, parseInt, addEventistener y otros.
 
 4.4. JAVASCRIPT CIPHER:
 Mientras estudiaba y diseñaba javascript me encontré con el video de Michelle donde explica la formula de ASCII lo escribi inmediatamente en cipher.js y lo fui modificando en la medida que iba avanzando con index.js, la formula final consta de un bucle for. 
@@ -129,7 +130,7 @@ Mientras estudiaba y diseñaba javascript me encontré con el video de Michelle 
 
 * [x] Uso de selectores del DOM.
 * [x] Manejo de eventos del DOM.
-* [x] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
+* [] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
 ### JavaScript

@@ -4,6 +4,13 @@ body
 
  @media only screen and (max-width:600px) 
  
+ border-top: thick;
+ border-right: medium;
+ border-bottom: medium;
+ border-left: thick;
+
+ margin: 1em 2em 3em 25em;
+
  padding: 3em 6em;  
 
  align-content: center;
@@ -21,9 +28,9 @@ body
  
       /*TITULO 1 "CIFRA TU CLAVE"*/
     h1 {
-      font-size: 36px;
+      font-size: 34px;
       font-style: italic;      
-      font-weight: normal;
+      font-weight: 550;
     }
       /*TITULO 2 "PARA MÁS SEGURIDAD"*/
       /*display inline: posicionarse en línea*/
@@ -32,7 +39,7 @@ body
 
       font-size: 30px;
       font-style: normal;      
-      font-weight: normal;
+      font-weight: 700;
     }
       
       /*TITULO FORMULARIO 1 "N° DE DESPLAZAMIENTOS"*/  
