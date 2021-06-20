@@ -1,0 +1,192 @@
+body
+{ 
+ background-color: #bcdabc;
+
+ @media only screen and (max-width:600px) 
+ 
+ border-top: thick;
+ border-right: medium;
+ border-bottom: medium;
+ border-left: thick;
+
+ margin: 1em 2em 3em 25em;
+
+ padding: 3em 6em;  
+
+ align-content: center;
+
+ width: auto;
+ height: auto;
+ box-sizing: auto;
+ 
+ position: absolute; 
+ text-align:center;
+ line-height: auto;
+ color:#1f284f;
+ font-family: Verdana, sans-serif;
+}  
+ 
+      /*TITULO 1 "CIFRA TU CLAVE"*/
+    h1 {
+      font-size: 34px;
+      font-style: italic;      
+      font-weight: 550;
+    }
+      /*TITULO 2 "PARA MÁS SEGURIDAD"*/
+      /*display inline: posicionarse en línea*/
+    .h3 {
+      display: inline;
+
+      font-size: 30px;
+      font-style: normal;      
+      font-weight: 700;
+    }
+      
+      /*TITULO FORMULARIO 1 "N° DE DESPLAZAMIENTOS"*/  
+  
+    .label {
+       display: inline;
+      
+       font-size: 24px;
+       font-style: normal;
+       font-weight: normal;  
+    }
+
+      /*FORMULARIO 1*/
+    .form {
+      position: relative;
+      background-color: #ffffff;
+      text-align: center;
+
+      width: 20px;
+      height: 20px;
+      left: 20px;
+      top: 20px; 
+    }
+     
+       /*TITULO FORMULARIO 2 "INGRESA PALABRA o CLAVE"*/  
+    .label {
+      display: inline;
+       
+      font-size: 24px;
+      font-style: normal;
+      font-weight: normal;  
+    }
+
+       /*FORMULARIO 2, AQUI USUARIO INGRESA PALABRA O CLAVE*/
+    .form {
+      position: relative;
+      background-color: #ffffff;
+      text-align: justify;
+
+      width: 25px;
+      height: 20px;
+      left: 91px;
+      top: 200px;  
+    }
+     
+        /*BOTON 1 IZQUIERDO "CIFRAR"*/
+    .button { 
+      position: relative;
+      text-align: right;
+      background-color: #585353;
+
+      width: 117px;
+      height: 30px;
+      left: 122px;
+      top: 518px; 
+ 
+      font-style: normal;
+      font-weight: 500px;
+      font-size: 21px;
+      line-height: 24px;
+    }
+    
+     /*BOTON 2 DERECHO "DESCIFRAR"*/
+    .button {
+      position: relative;
+      text-align: left;
+      background-color: #585353;
+
+      width: 117px;
+      height: 30px;
+      left: 122px;
+      top: 518px; 
+  
+      font-style: normal;
+      font-weight: 500px;
+      font-size: 21px;
+      line-height: 24px;
+    }
+
+    /*TITULO FORMULARIO N° 3, 2° pantalla "RESULTADO!"*/  
+    .label {
+        display: inline;
+         
+        font-size: 24px;
+        font-style: normal;
+        font-weight: normal;  
+      }
+  
+    /*FORMULARIO, AQUI APARECE PALABRA O CLAVE*/
+    .form {
+        position: relative;
+        background-color: #ffffff;
+        text-align: justify;
+  
+        width: 25px;
+        height: 20px;
+        left: 91px;
+        top: 200px;  
+      }
+       
+    /*BOTON 1 IZQUIERDO "GUARDAR"*/
+     .button { 
+        position: relative;
+        text-align: right;
+        background-color: #585353;
+  
+        width: 117px;
+        height: 30px;
+        left: 122px;
+        top: 518px; 
+   
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 21px;
+        line-height: 24px;
+      }
+      
+    /*BOTON 2 DERECHO "VOLVER"*/
+    .button {
+        position: relative;
+        text-align: left;
+        background-color: #585353;
+  
+        width: 117px;
+        height: 30px;
+        left: 122px;
+        top: 518px; 
+    
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 21px;
+        line-height: 24px;
+      }
+   
+      /*PIE DE PÁGINA*/
+    .footer {
+      position: absolute;
+      text-align: center;
+
+      width: 11px;
+      height: 11px;
+      left: 11px;
+      top: 11px; 
+
+      font-style: small;
+      font-weight: 10px;
+      font-size: 4px;
+      line-height: 10px;
+    }
+   

@@ -1,14 +1,160 @@
 <!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!--CAJA 1-->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+
+<body>
+  <section id="pagOne">
+    <div>
+
+      <!--VENDRIA SIENDO EL LOGO DE APLICACION-->
+      <h1 class="titulo">CIFRA 
+        <br>
+        TU 
+        <br>
+        CLAVE</h1>
+      <h3>PARA MAS SEGURIDAD</h3>
+
     </div>
+
+    <div>
+      <p>
+        <!--TITULO DE FORMULARIO 1-->
+        <label> Desplazamientos </label>
+
+        <!--aqui usuario ingresa N° DE DESPLAZAMIENTOS-->
+      <form>
+        <input type="number" class="placenu" id="despla" size="20px" required/>
+      </form>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <!--TITULO DE FORMULARIO 2-->
+        <label> INGRESA PALABRA o CLAVE </label>
+
+        <!--aqui usuario ingresa palabra o clave-->
+      <form>
+        <input type="text" class="displacement" id="placete" size="30px" required/>
+      </form>
+      </p>
+    </div>
+
+    <!--botones de interacción a otras cajas-->
+    <div>
+      <p>
+        <button id="encryptWord" class="CIFRAR" input type="cifrado" value="secuenseWord">
+          <href="" />CIFRAR
+        </button>
+        <button id="decryptWrench" class="DESCIFRAR" input type="descifrado" value="secuenceWrench">
+          <href="" />DESCIFRAR
+        </button>
+        <button id="IR">IR</button>
+      </p>
+    </div>
+
+    <!--INFORMACIÖN EXTRA Y RELEVANTE PARA EL USUARIO-->
+    <div>
+      <br>
+      <bdi>
+        <footer>
+          <small>
+              <p>
+              <nav class="enlaces">
+                Más información: 
+                <br>
+                <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">https://es.wikipedia.org</a>
+              </nav>
+              </p>
+              <p>
+                -Derechos reservados M.V.B.R.-
+              </p>
+            </small>
+          </footer>
+      </bdi>
+      </br>
+    </div>
+
+    <div></div>
+  </section>
+
+  <!--CAJA 2-->
+  <section hidden id="pagTwo">
+
+    <div>
+
+      <!--VENDRIA SIENDO EL LOGO DE APLICACION-->
+      <h1>CIFRA 
+        <br>
+        TU 
+        <br>
+        CLAVE</h1>
+      <h3>PARA MAS SEGURIDAD</h3>
+
+    </div>
+
+    <div>
+      <p>
+        <!--TITULO DE FORMULARIO 3-->
+        <label>RESULTADO!</label>
+
+        <!--AQUI SALE RESULTADO FORMULARIO 3, CAJA 1-->
+      <form>
+        <input type="text" class="secuence" id="sight" name="text" value=" " size="30px" />
+      </form>
+      </p>
+    </div>
+
+    <div>
+      <!--PREGUNTA A USUARIO-->
+      <h4>¿TE GUSTA TU CLAVE?</h4>
+    </div>
+    <!--botones de interacción a otras cajas-->
+    <div>
+      <button id="saveWrench" class="boton3" input type="button3" value="GUARDAR">GUARDAR</button>
+      <button id="goBack" class="boton4" input type="button4" value="VOLVER">
+        <href="index.html" />VOLVER
+      </button>
+
+    </div>
+
+    <!--INFORMACIÖN EXTRA Y RELEVANTE PARA EL USUARIO-->
+    <div>
+      <br>
+      <bdi>
+        <footer>
+          <small>
+              <p>
+                Más información:
+                <br>
+                <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">https://es.wikipedia.org</a>
+              </p>
+              <p>
+                -Derechos reservados M.V.B.R.-
+              </p>
+            </small>
+          </footer>
+      </bdi>
+      </br>
+    </div>
+
     <script src="index.js" type="module"></script>
-  </body>
+
+    <div id="datos"></div>
+</body>
+
+</html>
+</section>
+
+<script src="index.js" type="module"></script>
+</body>
+
 </html>

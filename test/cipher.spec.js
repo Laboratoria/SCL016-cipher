@@ -29,6 +29,9 @@ describe('cipher', () => {
       expect(cipher.encode(33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
     });
 
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    Formula; (x - 65 + n) % 26 + 65
+
     // Hacker edition
     //
     // [Español]
@@ -60,9 +63,9 @@ describe('cipher', () => {
 
   describe('cipher.decode', () => {
 
-    it('should be a function', () => {
-      expect(typeof cipher.decode).toBe('function');
-    });
+    it(document.getElementById), () => {
+      expect(typeof cipher.decode).toBe(DESCIFRAR);
+    };
 
     it('should throw TypeError when invoked with wrong argument types', () => {
       expect(() => cipher.decode()).toThrow(TypeError);
